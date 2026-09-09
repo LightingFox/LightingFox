@@ -20,7 +20,7 @@ enableRobotsTXT = true
 
 [languages]
   [languages.zh-cn]
-    languageName = "中文"
+    label = "中文"
     title = "LightingFox"
     weight = 1
 
@@ -53,3 +53,9 @@ enableRobotsTXT = true
     name = "关于"
     url = "/about/"
     weight = 2
+
+  [[menu.main]]
+    identifier = "football"
+    name = "足球"
+    url = "/football/"
+    weight = 3
