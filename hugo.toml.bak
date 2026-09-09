@@ -1,7 +1,7 @@
 baseURL = 'https://lightingfox.github.io/'
 locale = 'zh-cn'
 title = '我的个人博客'
-theme = 'hugo-theme-sigil'
+theme = "blowfish"'
 
 [params]
   author = "LightingFox"
