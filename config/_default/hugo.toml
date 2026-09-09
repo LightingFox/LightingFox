@@ -1,65 +1,55 @@
-# -- Site Configuration --
-
-theme = "blowfish"
-
 baseURL = "https://lightingfox.github.io/"
-title = "LightingFox"
+languageCode = "zh-cn"
 defaultContentLanguage = "zh-cn"
+title = "LightingFox"
+theme = "terminal"
 
 enableRobotsTXT = true
-summaryLength = 0
-
-buildDrafts = false
-buildFuture = false
-
-enableEmoji = true
 
 [pagination]
-  pagerSize = 20
+  pagerSize = 10
 
-[imaging]
-  anchor = "Center"
+[params]
+  contentTypeName = "posts"
+  showMenuItems = 3
+  showLanguageSelector = false
+  fullWidthTheme = false
+  centerTheme = true
+  autoCover = true
+  showLastUpdated = false
 
-[taxonomies]
-  tag = "tags"
-  category = "categories"
-  author = "authors"
-  series = "series"
+[languages]
+  [languages.zh-cn]
+    languageName = "中文"
+    title = "LightingFox"
+    weight = 1
 
-[sitemap]
-  changefreq = "daily"
-  filename = "sitemap.xml"
-  priority = 0.5
+    [languages.zh-cn.params]
+      subtitle = "C#、Unity、OpenGL 与编程笔记"
+      owner = "LightingFox"
+      keywords = "C#, Unity, OpenGL, 编程"
+      copyright = "LightingFox"
+      menuMore = "更多"
+      readMore = "阅读全文"
+      readOtherPosts = "阅读其他文章"
+      newerPosts = "较新的文章"
+      olderPosts = "较早的文章"
+      missingContentMessage = "页面不存在"
+      missingBackButtonLabel = "返回首页"
 
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+      [languages.zh-cn.params.logo]
+        logoText = "LightingFox"
+        logoHomeLink = "/"
 
-[related]
-  threshold = 0
-  toLower = false
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "文章"
+    url = "/posts/"
+    weight = 1
 
-  [[related.indices]]
-    name = "tags"
-    weight = 100
-
-  [[related.indices]]
-    name = "categories"
-    weight = 100
-
-  [[related.indices]]
-    name = "series"
-    weight = 50
-
-  [[related.indices]]
-    name = "authors"
-    weight = 20
-
-  [[related.indices]]
-    name = "date"
-    weight = 10
-
-  [[related.indices]]
-    applyFilter = false
-    name = "fragmentrefs"
-    type = "fragments"
-    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 2
