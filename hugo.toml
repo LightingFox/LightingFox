@@ -1,4 +1,4 @@
-baseURL = 'https://LightingFox.github.io/LightingFox/'
+baseURL = 'https://lightingfox.github.io/'
 locale = 'zh-cn'
 title = '我的个人博客'
 theme = 'hugo-theme-sigil'
